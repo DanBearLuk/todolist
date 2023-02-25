@@ -1,0 +1,60 @@
+@import '../../index.css';
+
+.gridWrapper {
+    height: calc(100vh - 50px);
+    mask-image: linear-gradient(transparent, transparent 10px, black 45px), linear-gradient(to left, black 10px, transparent 10px);
+    overflow-y: scroll;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 55px;
+    row-gap: 55px;
+    padding: 45px 40px 40px 40px;
+}
+
+.filtersWrapper {
+    margin: 15px 0 0 25px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font: 400 26px 'PT Sans Caption', sans-serif;
+    height: 35px;
+}
+
+.filtersWrapper input[type="text"], select {
+    color: #FFFFFF;
+    font: 400 26px 'PT Sans Caption', sans-serif;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+.filtersWrapper input[type="text"] {
+    margin-left: 25px;
+    max-width: 250px;
+    text-overflow: ellipsis;
+}
+
+.filtersWrapper input[type="image"] {
+    margin: 0 8px 0 25px;
+    height: 26px;
+    transition: 0.1s;
+}
+
+.descending {
+    transform: scaleY(-1);
+}
+
+.filtersWrapper option {
+    background-color: #bdbdbd;
+}
+
+.separator {
+    height: 35px;
+    width: 2px;
+    background-color: #FFFFFF;
+    margin: 0 40px;
+}

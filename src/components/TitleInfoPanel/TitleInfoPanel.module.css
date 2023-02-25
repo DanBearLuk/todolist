@@ -1,0 +1,21 @@
+.titleInfo {
+    width: 100%;
+}
+
+.titleInfo label {
+    display: block;
+    width: 135px;
+    color: #7EFFF0;
+    background: 105% 50% / 50% 50% no-repeat url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjguMSAxNjAuMzEiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojOThkN2Q4O3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDo2cHg7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJMYXllcl8xLTIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDguNSwxNDEuNzlsNzcuNjctMTA3YTIuMjIsMi4yMiwwLDAsMC0uNDktMy4xTDEwNS4xOCwxNi44LDg0LjY3LDEuOTJhMi4yMSwyLjIxLDAsMCwwLTMuMS41TDMuOSwxMDkuNDJhMi4yOSwyLjI5LDAsMCwwLS40MiwxLjIxbC0yLDQ1Ljg2YTIuMjIsMi4yMiwwLDAsMCwzLDIuMTdsNDMtMTYuMDlBMi4xMywyLjEzLDAsMCwwLDQ4LjUsMTQxLjc5WiIvPjwvZz48L2c+PC9zdmc+');
+    cursor: pointer;
+}
+
+.titleInfo textarea {
+    width: 100%;
+    font: 34px 'Open Sans', sans-serif;
+    resize: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}

@@ -1,0 +1,18 @@
+.generalInfo {
+    margin: 0;
+}
+
+.generalInfo span {
+    text-decoration: underline;
+}
+
+.completedNum {
+    color: #50DA5E;
+}
+
+.uncompletedNum {
+    color: #FF5959;
+}
+
+.progressNum {
+}

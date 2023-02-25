@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    column-gap: 40px;
+}
+
+.leftBox {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.rightBox {
+    width: 435px;
+    min-width: 435px;
+    overflow: hidden;
+}

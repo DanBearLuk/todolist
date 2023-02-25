@@ -1,0 +1,111 @@
+@import '../../index.css';
+
+.panel {
+    width: 410px;
+    border-radius: 22px;
+    background: var(--main-panel-bg);
+    color: #ffffff;
+    box-shadow: -2px 3px 6px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.selected {
+    outline: 3px solid var(--main-panel-selected);
+}
+
+.title {
+    height: 114px;
+    margin: 20px 35px 40px 35px;
+    font-size: 28px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.progressBarWrapper {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .4);
+    overflow: hidden;
+}
+
+.progressBarWrapper span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font: 700 28px 'PT Sans Caption', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar {
+    height: 100%;
+    width: 0%;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.15);
+}
+
+.btnsWrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.panel a, button {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    height: 34px;
+    transition: .3s;
+    cursor: pointer;
+    font: 700 20px 'PT Sans Caption', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    line-height: 32px;
+}
+
+.deleteBtn {
+    position: relative;
+    width: 34px;
+    background-color: var(--delete-btn-bg);
+    border-color: var(--delete-btn-clr);
+    color: var(--delete-btn-clr);
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAuNTkgMjYwLjU5Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6bm9uZTtzdHJva2U6I2ZiZDJkMztzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MjAuNDVweDt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIyNTAuMzYiIHkxPSIyNTAuMzYiIHgyPSIxMC4yMyIgeTI9IjEwLjIzIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMTAuMjMiIHkxPSIyNTAuMzYiIHgyPSIyNTAuMzYiIHkyPSIxMC4yMyIvPjwvZz48L2c+PC9zdmc+');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: calc(100% - 5px) 50%;
+}
+
+.deleteBtn::after {
+    position: absolute;
+    content: 'Are you sure?';
+    top: 50%;
+    right: 142px;
+    left: -200px;
+    transform: translate(50%, -50%);
+}
+
+.deleteBtn:hover {
+    width: 250px;
+    box-shadow: 0 0 10px 2px var(--delete-btn-bg);
+    border-color: var(--delete-btn-bg);
+}
+
+.openBtn {
+    flex-grow: 1;
+    background-color: var(--open-btn-bg);
+    border-color: var(--open-btn-clr);
+    color: var(--open-btn-clr);
+}
+
+.openBtn:hover {
+    box-shadow: 0 0 10px 2px var(--open-btn-bg);
+    border-color: var(--open-btn-bg);
+}
